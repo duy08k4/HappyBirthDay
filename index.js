@@ -1,5 +1,5 @@
 const contentLetterSrart_actived = "Hãy nói gì đó ở đây trước khi người ấy mở bức thư nhé." //Lời mở đầu cho bức thư
-const mainContentLetter = "Gửi lời nhắn nhủ đến người bạn bạn yêu thương." //Nội dung của bức thư
+const mainContentLetter = "Chúc chị tuổi mới đầy hạnh phúc và ý nghĩa nhaa.Hãy xua tan hết nỗi buồn phiền vì đã có em ở đây rồi sẽ làm điểm tựa cho chị nhé. Love You🥰 " //Nội dung của bức thư
 
 // Gắn 1 đường link ảnh bất kì
 let imgStart = document.querySelector(".myAI"); //Hình ảnh xuất hiện trong lời mở đầu của bức thư
