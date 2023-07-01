@@ -209,6 +209,7 @@ body {
 .content {
     position: absolute;
     background-color: #F2EEE4;
+    opacity: 0;
     width: 80%;
     left: 50%;
     bottom: 0;
@@ -252,13 +253,15 @@ body {
 }
 
 .content.actived {
-    bottom: 150px;
+    bottom: 120px;
     width: 300px;
     height: fit-content;
     max-height: 450px;
     margin: 0;
     left: 50%;
     transform: translate(-50%);
+    opacity: 1;
+    transition: .5s;
 }
 
 /* ---------------------------CONTENT------------------------ */
@@ -269,8 +272,8 @@ body {
     bottom: 0;
     right: 0;
     transform: translate(50%, 50%);
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,8 +298,18 @@ body {
 .mainContent {
     overflow: auto;
     width: 100%;
+    max-height: 400px;
     font-family: 'Dancing Script', cursive !important;
     font-size: 24px;
+}
+
+.mainContent::-webkit-scrollbar {
+    background-color: white;
+    width: 4px;
+}
+
+.mainContent::-webkit-scrollbar-thumb {
+    background-color: pink;
 }
 
 /* ---------------------------KEYFRAME---------------------- */

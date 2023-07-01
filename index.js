@@ -34,10 +34,13 @@ document.querySelector("#mess").addEventListener("change", function () { //Hiệ
         const splitMainContentLetter = mainContentLetter.split("");
 
         splitMainContentLetter.forEach((val, index) => {
-            setTimeout(() => {
+            const effectType = setTimeout(() => {
                 document.querySelector(".mainContent").innerHTML += val;
+                const mainContent = document.querySelector(".mainContent");
+                mainContent.scrollTop = mainContent.scrollHeight;
                 if (index == mainContentLetter.length - 1) {
                     document.querySelector(".img1").setAttribute("style", "opacity: 1; transition: .5s")
+                    clearTimeout(effectType);
                 }
             }, 50 * index)
         })
